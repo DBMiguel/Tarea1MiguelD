@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "status": true,
+    "thumbnails": [],
+    "title": "Producto prueba",
+    "description": "Descripción del producto",
+    "code": "P001",
+    "price": 100,
+    "stock": 10,
+    "category": "General"
+  },
+  {
+    "id": 2,
+    "status": true,
+    "thumbnails": [],
+    "title": "Producto prueba",
+    "description": "Descripción del producto",
+    "code": "P001",
+    "price": 100,
+    "stock": 10,
+    "category": "General"
+  }
+]

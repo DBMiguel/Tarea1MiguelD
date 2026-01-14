@@ -1,0 +1,13 @@
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "title": "Producto prueba",
+  "description": "Descripción del producto",
+  "code": "P001",
+  "price": 100,
+  "status": true,
+  "stock": 10,
+  "category": "General",
+  "thumbnails": []
+}
