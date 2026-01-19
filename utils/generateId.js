@@ -1,4 +1,3 @@
 export const generateId = () => {
-    return Date.now().toString();
-  };
-  
+  return Date.now().toString();
+};

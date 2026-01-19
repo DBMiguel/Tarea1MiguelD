@@ -1,0 +1,12 @@
+[
+  {
+    "first_name": "Miguel",
+    "last_name": "Diaz",
+    "email": "miguel@test.com",
+    "age": 30,
+    "password": "$2b$10$8N8EqnIc.p6mWm7JDhVCQeP4wAE0/LvJBQth.tYgx/r7sPm6Qb0kq",
+    "cart": null,
+    "role": "user",
+    "id": "1768843073323"
+  }
+]

@@ -1,3 +1,38 @@
+##################################################
+#           PRUEBAS DE USUARIOS / AUTH
+##################################################
+
+###  Registrar usuario
+POST http://localhost:8080/api/sessions/register
+Content-Type: application/json
+
+{
+  "first_name": "Miguel",
+  "last_name": "Diaz",
+  "email": "miguel@test.com",
+  "age": 30,
+  "password": "1234"
+}
+
+###  Login de usuario
+POST http://localhost:8080/api/sessions/login
+Content-Type: application/json
+
+{
+  "email": "miguel@test.com",
+  "password": "1234"
+}
+
+###  Obtener usuario actual
+GET http://localhost:8080/api/sessions/current
+Authorization: Bearer PASTE_TU_TOKEN_AQUI
+
+
+##################################################
+#           PRUEBAS DE PRODUCTOS
+##################################################
+
+###  Crear un producto
 POST http://localhost:8080/api/products
 Content-Type: application/json
 
@@ -10,4 +45,49 @@ Content-Type: application/json
   "stock": 10,
   "category": "General",
   "thumbnails": []
+}
+
+### Obtener todos los productos
+GET http://localhost:8080/api/products
+
+###  Obtener un producto por ID
+GET http://localhost:8080/api/products/1
+
+###  Actualizar un producto
+PUT http://localhost:8080/api/products/1
+Content-Type: application/json
+
+{
+  "price": 150,
+  "stock": 5
+}
+
+###  Eliminar un producto
+DELETE http://localhost:8080/api/products/1
+
+
+##################################################
+#           PRUEBAS DE CARRITOS
+##################################################
+
+###  Crear un carrito
+POST http://localhost:8080/api/carts
+Content-Type: application/json
+
+{
+  "products": []
+}
+
+### Obtener todos los carritos
+GET http://localhost:8080/api/carts
+
+###  Obtener un carrito por ID
+GET http://localhost:8080/api/carts/1
+
+###  Agregar producto al carrito
+POST http://localhost:8080/api/carts/1/product/1
+Content-Type: application/json
+
+{
+  "quantity": 2
 }
